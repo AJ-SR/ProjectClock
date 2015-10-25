@@ -1,0 +1,5 @@
+item.milk_ingot.name=Milk Ingot
+item.space_leather.name=Space Cow Leather
+tile.space_leather_block.name=Space Cow Leather Block
+tile.space_cow_portal.name=Space Cow Portal
+itemGroup.tabMod=Space Cow Mod
