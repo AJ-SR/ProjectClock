@@ -1,13 +1,18 @@
 package ajsr.ProjectClock;
 
+import net.minecraft.init.Blocks;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemStack;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.DimensionManager;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import ajsr.ProjectClock.init.ModBlocks;
 import ajsr.ProjectClock.init.ModItems;
 import ajsr.ProjectClock.proxy.CommonProxy;
@@ -20,6 +25,7 @@ public class MainMod {
 	public static CommonProxy proxy;
 	
 	public static final ModTab tabMod = new ModTab("tabMod");
+	
 	
 	
 	@EventHandler
@@ -38,6 +44,11 @@ public class MainMod {
 	public void init(FMLInitializationEvent event)
 	{
 		proxy.registerRenders();
+	
+		ModRecipes.addRecipes();
+		
+		
+		
 	}
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event)
