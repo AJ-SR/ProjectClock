@@ -24,7 +24,7 @@ public class ModItems {
 	public static Item milk_axe;
 	public static Item milk_shovel;
 	public static Item milk_sword;
-	public static ItemSpawnEgg spacecowegg;
+	public static Item spacecowegg;
 	
 	public static ToolMaterial Milk = EnumHelper.addToolMaterial("Milk", 3, 2601, 12.0f, 3.0f, 22);
 	
