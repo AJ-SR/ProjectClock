@@ -24,6 +24,7 @@ public class ModItems {
 	public static Item milk_axe;
 	public static Item milk_shovel;
 	public static Item milk_sword;
+	public static ItemSpawnEgg spacecowegg;
 	
 	public static ToolMaterial Milk = EnumHelper.addToolMaterial("Milk", 3, 2601, 12.0f, 3.0f, 22);
 	
@@ -35,6 +36,7 @@ public class ModItems {
 		milk_axe = new ItemMilkAxe(Milk).setCreativeTab(MainMod.tabMod);
 		milk_sword = new ItemMilkSword(Milk).setCreativeTab(MainMod.tabMod);
 		milk_shovel = new ItemMilkShovel(Milk).setCreativeTab(MainMod.tabMod);
+		spacecowegg = new ItemSpaceCowEgg().setUnlocalizedName("spacecowegg").setCreativeTab(MainMod.tabMod);
 	}
 	public static void register()
 	{
