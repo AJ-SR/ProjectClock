@@ -11,6 +11,7 @@ public class ClientProxy extends CommonProxy{
 	{
 		ModItems.registerRenders();
 		ModBlocks.registerRenders();
+		Entity.preInit();
 	}
 
 }
