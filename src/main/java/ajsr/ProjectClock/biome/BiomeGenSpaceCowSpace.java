@@ -13,7 +13,7 @@ public class BiomeGenSpaceCowSpace extends BiomeGenBase{
 		public BiomeGenSpaceCowSpace(int id){
 			super(id);
 			
-			this.spawnableCreatureList.add(new SpawnListEntry(EntitySlime.class, 5, 2, 10));
+			this.spawnableCreatureList.add(new SpawnListEntry(EntitySpaceCow.class, 5, 2, 10));
 			
 			this.theBiomeDecorator.treesPerChunk = 5;
 			this.theBiomeDecorator.grassPerChunk = 2;
