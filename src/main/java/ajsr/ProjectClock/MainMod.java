@@ -16,7 +16,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import ajsr.ProjectClock.init.ModBlocks;
 import ajsr.ProjectClock.init.ModItems;
 import ajsr.ProjectClock.proxy.CommonProxy;
-
+import ajsr.ProjectClock.biome.BiomeRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class MainMod {
@@ -33,7 +33,7 @@ public class MainMod {
 	{
 		System.out.println("[Project Clock] Initializing mod.");
 		  
-		
+		BiomeRegistry.mainRegistry();
 		ModBlocks.init();
 		ModBlocks.register();
 		ModItems.init();
