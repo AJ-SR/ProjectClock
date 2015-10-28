@@ -19,7 +19,7 @@ public class ModBlocks {
 	
 	public static void init()
 	{
-		space_leather_block = new AJSRBlocks(Material.cloth).setUnlocalizedName("space_leather_block").setCreativeTab(MainMod.tabMod);
+		space_leather_block = new AJSRBlocks(Material.cloth, float 3, float 12, SoundType.cloth).setUnlocalizedName("space_leather_block").setCreativeTab(MainMod.tabMod);
 		
 		cheese_block = new AJSRBlocks(Material.clay).setUnlocalizedName("cheese_block").setCreativeTab(MainMod.tabMod);
 	}
